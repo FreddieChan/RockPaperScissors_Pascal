@@ -11,32 +11,36 @@ Begin
     Randomize;
     CPU := Random(3);
     Case cpu Of 
-        0:   Writeln('CPU: Rock');
-        Writeln('          _                        
-                ');
-
-                Writeln('         (_)                       
-                ');
-
-                Writeln(' ___  ___ _ ___ ___  ___  _ __ ___ 
-                ');
-
-                Writeln('/ __|/ __| / __/ __|/ _ \|  __/ __|
-                ');
-
-                Writeln('\__ \ (__| \__ \__ \ (_) | |  \__ \
-                ');
-
-                Writeln('|___/\___|_|___/___/\___/|_|  |___/
-                ');
-
-                Writeln('');
-
-
-
+        0:
+             Begin
+                 Writeln('CPU: Rock');
+                 {*                     _    
+               | |   
+ _ __ ___   ___| | __
+| '__/ _ \ / __| |/ /
+| | | (_) | (__|   < 
+|_|  \___/ \___|_|\_\
+                 *}
+                 Writeln('');
+             End;
         1:   Writeln('CPU: Paper');
-        2:   Writeln('CPU: Scissor');
+        2:
+             Begin
+                 Writeln('CPU: Scissor');
+                 Writeln('          _                        ');
+
+                 Writeln('         (_)                       ');
+
+                 Writeln(' ___  ___ _ ___ ___  ___  _ __ ___ ');
+
+                 Writeln('/ __|/ __| / __/ __|/ _ \|  __/ __|');
+
+                 Writeln('\__ \ (__| \__ \__ \ (_) | |  \__ \');
+
+                 Writeln('|___/\___|_|___/___/\___/|_|  |___/');
+             End;
     End;
+
     If cpu = player Then
         Begin
             winloseDraw := 'Draw';
