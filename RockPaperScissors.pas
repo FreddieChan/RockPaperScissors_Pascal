@@ -12,6 +12,28 @@ Begin
     CPU := Random(3);
     Case cpu Of 
         0:   Writeln('CPU: Rock');
+        Writeln('          _                        
+                ');
+
+                Writeln('         (_)                       
+                ');
+
+                Writeln(' ___  ___ _ ___ ___  ___  _ __ ___ 
+                ');
+
+                Writeln('/ __|/ __| / __/ __|/ _ \|  __/ __|
+                ');
+
+                Writeln('\__ \ (__| \__ \__ \ (_) | |  \__ \
+                ');
+
+                Writeln('|___/\___|_|___/___/\___/|_|  |___/
+                ');
+
+                Writeln('');
+
+
+
         1:   Writeln('CPU: Paper');
         2:   Writeln('CPU: Scissor');
     End;
