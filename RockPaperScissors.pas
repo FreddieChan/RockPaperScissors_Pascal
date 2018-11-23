@@ -14,29 +14,33 @@ Begin
         0:
              Begin
                  Writeln('CPU: Rock');
-                 {*                     _    
-               | |   
- _ __ ___   ___| | __
-| '__/ _ \ / __| |/ /
-| | | (_) | (__|   < 
-|_|  \___/ \___|_|\_\
-                 *}
+                 Writeln('                _    ');
+                 Writeln('               | |   ');
+                 Writeln(' _ __ ___   ___| | __');
+                 Writeln('| |__/ _ \ / __| |/ /');
+                 Writeln('| | | (_) | (__|   < ');
+                 Writeln('|_|  \___/ \___|_|\_\');
                  Writeln('');
              End;
-        1:   Writeln('CPU: Paper');
+        1:
+             Begin
+                 Writeln('CPU: Paper');
+                 Writeln(' _ __   __ _ _ __   ___ _ __ ');
+                 Writeln('|  _ \ / _` |  _ \ / _ \  __|');
+                 Writeln('| |_) | (_| | |_) |  __/ |   ');
+                 Writeln('| .__/ \__,_| .__/ \___|_|   ');
+                 Writeln('| |         | |              ');
+                 Writeln('|_|         |_|              ');
+
+             End;
         2:
              Begin
                  Writeln('CPU: Scissor');
                  Writeln('          _                        ');
-
                  Writeln('         (_)                       ');
-
                  Writeln(' ___  ___ _ ___ ___  ___  _ __ ___ ');
-
                  Writeln('/ __|/ __| / __/ __|/ _ \|  __/ __|');
-
                  Writeln('\__ \ (__| \__ \__ \ (_) | |  \__ \');
-
                  Writeln('|___/\___|_|___/___/\___/|_|  |___/');
              End;
     End;
@@ -83,9 +87,11 @@ Begin
     Clrscr;
     playcount := 1;
     Repeat
+        writeln;
         Writeln('Your play, Enter (R)ock, (P)aper, (S)cissors. Play', playcount,
                 '/5' );
         playerinput := Upcase(readkey);
+        {}
         If playerinput = 'R' Then
             Begin
                 Writeln('Rock');{REPLACE WITH ASCII ART}
