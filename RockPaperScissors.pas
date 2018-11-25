@@ -4,8 +4,8 @@ Program RockPaperScissors;
 Uses crt;
 
 Var 
-    player, cpu, uwincount, cwincount, Drawcount, playcount :   Integer;
-    Playerinput :   String;
+    player, cpu, uwincount, cwincount, Drawcount, playcount : Integer;
+    Playerinput : String;
 Function winloseDraw(player : Integer):   String; {player}
 {rockR0, paperP1, scissorS2}
 Begin
